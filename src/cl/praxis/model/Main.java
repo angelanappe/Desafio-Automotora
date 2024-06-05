@@ -22,5 +22,12 @@ public class Main {
 
         Tienda tienda = new Tienda(vendedor, taxi, 100);
         System.out.println(tienda.existeStock());
+
+        //para clase libroVenta
+        Cliente clienteLibro = new Cliente("123456", "Juanito", 30);
+        Vehiculo vehiculoLibro = new Vehiculo("azul", "YY-YY");
+
+        LibroVenta venta = new LibroVenta("Venta20240604", "04062024");
+        venta.guardarVenta(cliente, vehiculoLibro);
     }
 }
